@@ -1,4 +1,0 @@
-tenantId=f87b6980-8d34-4fcb-b85e-4e441adf8334
-clientId=99842e8c-f339-4f18-a804-4c5d07b9f24a
-clientSecret=f1z8Q~KNWB.QFCkyhiCEAwZuJFcWiEffplAymc2M
-

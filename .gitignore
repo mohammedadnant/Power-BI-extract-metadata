@@ -1,0 +1,15 @@
+# Ignore local config with secrets
+config.txt
+
+# Ignore output files
+*.csv
+
+# Visual Studio / editor files
+.vscode/
+*.user
+*.suo
+
+# OS files
+Thumbs.db
+.DS_Store
+PBI Service Extract/config.txt
