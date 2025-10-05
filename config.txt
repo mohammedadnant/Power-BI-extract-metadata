@@ -1,0 +1,3 @@
+tenantId=xxxx
+clientId=xxxx
+clientSecret=xxxx
