@@ -7,7 +7,8 @@ This project uses the Analysis Services Tabular client (XMLA) to connect to data
 ## Contents
 
 - `PBI script with Service Principal Multiple workspace With Parameter.ps1` — main script (reads credentials from `config.txt` and writes a CSV with metadata to the project folder).
-- `config.txt` — template for providing Service Principal credentials (not committed to Git; included here only for example).
+- `config.txt` — template for providing Service Principal credentials (a masked example is included in the repo; do NOT commit real secrets).
+- `requirements.txt` — runtime and tooling notes required to run the script (DLLs, PowerShell version, optional tools).
 - `run_output.txt` — example run log (not required).
 
 ## Quick start
@@ -31,6 +32,11 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\"PBI script with Service P
 ```
 
 5. Output: a timestamped CSV will be created in the project folder, e.g. `PowerBI_Metadata_Extract_20251005_123451.csv`.
+
+## Files added to the repository
+
+- `config.txt` (masked example) — contains placeholders and should be updated locally with real credentials if you run the script. Do not commit real secrets.
+- `requirements.txt` — lists runtime DLLs and optional tools required to run the script.
 
 ## Requirements
 
