@@ -1,0 +1,27 @@
+# Requirements for Power BI Extract Metadata
+
+# This repository is a PowerShell-based tool. There are no Python packages.
+# Use this file to list runtime dependencies and tools contributors need to run
+# and develop the project.
+
+[Runtime]
+PowerShell: Windows PowerShell 5.1 or PowerShell 7.x
+Microsoft ADOMD.NET (ADOMD) runtime: Microsoft.AnalysisServices.AdomdClient.dll
+  Typical install: ADOMD.NET 16.x (see https://learn.microsoft.com/en-us/analysis-services/adomd/adomd-net?view=asallproducts-allversions)
+Microsoft.AnalysisServices.Tabular.dll
+  Bundled with Tabular Editor or Analysis Services client libraries. (Script references path: C:\Program Files (x86)\Tabular Editor\Microsoft.AnalysisServices.Tabular.dll)
+
+[Power BI / Azure prerequisites]
+Power BI tenant with XMLA endpoint enabled (Premium / PPU or dedicated capacity)
+Service Principal (Azure AD App) with client secret and access to target workspaces
+Power BI tenant settings allowing service principals to access APIs (admin setting)
+
+[Optional tooling]
+Git (command line) — required for contribution and publishing
+GitHub CLI (`gh`) — optional, used for repository visibility edits and other automation
+BFG or git-filter-repo — optional, used to scrub secrets from git history if needed
+
+[Notes]
+- The scripts reference local DLL paths; if you have different install locations update the paths in the PowerShell script.
+- There are no pip/npm dependencies. If you expect platform-specific packages (e.g., for running on Linux with PowerShell Core), list them here.
+- Keep secrets out of the repository. Use `config.txt` as an example file only.
