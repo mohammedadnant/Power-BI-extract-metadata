@@ -1,5 +1,5 @@
 # Ignore local config with secrets
-config.txt
+# (project root config.txt will be committed as requested)
 
 # Ignore output files
 *.csv
